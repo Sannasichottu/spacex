@@ -1,16 +1,1 @@
-<nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/history">History</Link>
-            </li>
-            <li>
-              <Link to="/launches">Launches</Link>
-            </li>
-            <li>
-              <Link to="/rockets">Rockets</Link>
-            </li>
-          </ul>
-        </nav>
+    {/*background-image: url(https://cms.accuweather.com/wp-content/uploads/2022/01/AP20213035634998.jpg?w=632) no-repeat top center / cover ;*/}
