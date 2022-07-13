@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gulzar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@1,400;1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --mainColor : #29335c;
+    --mainColorlight:#5767aa;
+    --secondaryColor:#DB2B39;
+    --textColor:#eee;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 2rem;
+    background-image: url(https://w0.peakpx.com/wallpaper/434/377/HD-wallpaper-magenta-explorer-ultra-space-landscape-stars-mountains-panoramic-spaceman-panoramicview-spaceart-space-art-magenta-planets-u.jpg);
+}
+
+header h3{
+    color: var(--textColor);
+    margin-top: 1rem;
+    font-family: 'Gulzar', serif;
+
+}
+
+header h3 span{
+    color: red;
+    font-weight: 600;
+    font-family: 'Gulzar', serif;
+}
+
+nav a{
+    margin: 0 3.3rem;
+    color: rgb(212, 183, 119);
+    text-decoration: none;
+    font-weight: 400;
+    font-family: 'Gentium Book Plus', serif;
+}
+
+nav a:hover{
+    color: var(--secondaryColor);
+}
+
+header .nav-btn{
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--textColor);
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.8rem;
+}
+
+@media only screen and (max-width:784px) {
+    header .nav-btn{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    header nav{
+        position:fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center ;
+        gap: 1.5rem;
+        background-image: url(https://media.wired.com/photos/593271df5c4fbd732b552a96/master/w_2560%2Cc_limit/602857main_pia14293-amended-43_946-7101.jpg);
+        transition: 1s;
+        transform: translateY(-100vh);
+    }
+
+    header .responsive_nav{
+        transform: none;
+    }
+
+    nav .nav-close-btn{
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    nav a{
+        font-size: 1.5rem;
+    }
+    
+}
