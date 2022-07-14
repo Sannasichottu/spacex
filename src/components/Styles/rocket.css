@@ -16,7 +16,7 @@ h1{
     font-size: 58px;
     text-align: center;
     color: #fff;
-    margin: 30px 0;
+    margin: 20px 0;
 }
 
 h1 span{
@@ -47,6 +47,7 @@ h1 span{
     margin-right: 30px;
     margin-top: 30px;
     background-color: rgba(177, 214, 235, 0.479);
+    background-image: linear-gradient(135deg, #485461 0%, #28313b 74%);
     border-radius: 15px;
 }
 
@@ -54,7 +55,7 @@ h1 span{
     font-family: 'Gulzar', serif;
     font-size: 20px;
     font-weight: 10px;
-    color: rgb(60, 7, 252);
+    color: rgb(154, 149, 173);
 }
 
 .card-text{
