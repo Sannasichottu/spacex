@@ -58,22 +58,23 @@ class Rocket extends Component {
                                             <div id={`carousel${rocket.id}Controls`} class="carousel slide" data-ride="carousel">
                                                 <div class="carousel-inner">
                                                     <div class="carousel-item active">
-                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/SpaceX_falcon_in_warehouse.jpg/440px-SpaceX_falcon_in_warehouse.jpg" class="d-block w-100" alt="..." />
+                                                    <img src="https://images.unsplash.com/photo-1634175734730-feeb73322946?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=841&q=80" class="d-block w-100" alt="..." />
+                                                        
                                                     </div>
                                                     <div class="carousel-item">
-                                                        <img src="https://www.nasaspaceflight.com/wp-content/uploads/2020/11/10CD8E7A-2037-4563-AF86-DA63A6D8732C.jpeg" class="d-block w-100" alt="..." />
+                                                        <img src="https://images.pexels.com/photos/586106/pexels-photo-586106.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="..." />
                                                     </div>
                                                     <div class="carousel-item">
-                                                        <img src="https://img.republicworld.com/republic-prod/stories/promolarge/xhdpi/syb000b9tf8za41j_1654690702.jpeg" class="d-block w-100" alt="..." />
+                                                        <img src="https://images.pexels.com/photos/586089/pexels-photo-586089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="..." />
                                                     </div>
                                                     <div class="carousel-item">
-                                                        <img src="https://cms.qz.com/wp-content/uploads/2018/03/spacex-falcon-heavy-space-internet-satellite-elon-musk.jpg?quality=75&strip=all&w=1600&h=900&crop=1" class="d-block w-100" alt="..." />
+                                                        <img src="https://images.pexels.com/photos/586045/pexels-photo-586045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="..." />
                                                     </div>
                                                     <div class="carousel-item">
-                                                        <img src="https://www.sciencenews.org/wp-content/uploads/2018/09/082418_MT_reviews_war_feat.jpg" class="d-block w-100" alt="..." />
+                                                    <img src="https://images.pexels.com/photos/60130/pexels-photo-60130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="..." />
                                                     </div>
                                                     <div class="carousel-item">
-                                                        <img src="https://cdn.mos.cms.futurecdn.net/fnfyE7cDwV9JWCopNK8Ycb-1200-80.jpg" class="d-block w-100" alt="..." />
+                                                        <img src="https://images.pexels.com/photos/586079/pexels-photo-586079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="..." />
                                                     </div>
                                                 </div>
                                                 <a class="carousel-control-prev" href={`#carousel${rocket.id}Controls`} role="button" data-slide="prev">
@@ -109,7 +110,7 @@ class Rocket extends Component {
                                                 </div>
                                                 <div className="col-sm-4">
                                                     <h4>Cost/Launch</h4>
-                                                    <p>${rocket.cost_per_launch/1000000} Million</p>
+                                                    <p>$ {rocket.cost_per_launch/1000000} Million</p>
                                                 </div>
                                             </div>
                                             <p>{rocket.description}</p>
