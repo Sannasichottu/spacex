@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Gulzar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@1,400;1,700&display=swap');
+
+.footer {
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 30px 0 20px;
+  }
+  
+  .footer h3 {
+    color: #fff;
+    margin-top: 1rem;
+    font-family: 'Gulzar', serif;
+  }
+
+  .footer span{
+    color: red;
+    font-weight: 600;
+    font-family: 'Gulzar', serif;
+  }
+
+  .footer p{
+    font-family: 'Gentium Book Plus', serif;
+  }
+  
+
+  .footer hr {
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+  }
+  .copyright {
+    text-align: center;
+  }
+  .menu-icon {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+  }
+  

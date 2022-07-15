@@ -2,6 +2,8 @@
 import React, { Component, Fragment } from "react";
 import "../Styles/rocket.css"
 import { Filter } from "./Filter";
+import Footer from "./Footer";
+
 
 class Rocket extends Component {
     constructor() {
@@ -123,6 +125,7 @@ class Rocket extends Component {
                         </Fragment>
                     ))}
                 </div>
+                <Footer/>
             </div>
         )
     }

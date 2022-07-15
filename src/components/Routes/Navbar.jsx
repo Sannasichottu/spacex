@@ -1,35 +1,47 @@
-import React, { useRef } from "react";
-import "../Styles/navbar.css"
-import { FaBars, FaTimes } from "react-icons/fa";
-import Home from "./Home";
+import React from 'react';
+import { Navbar, Nav} from 'react-bootstrap';
+import {BrowserRouter as Router,Switch,Route,Link } from "react-router-dom";
+import Rocket from "./Rocket"
+import Home from "./Home"
+import Launches from "./Launches"
+import History from "./History"
+import "../Styles/navbar.css";
 
-function Navbar() {
-    const navRef = useRef();
-
-    const showNavbar = () => {
-        navRef.current.classList.toggle("responsive_nav");
-    }
-
+function Navbars () {
     return (
-        <>
-            <header>
-                <h3>Space<span>X</span></h3>
-                <nav ref={navRef}>
-                    <a href="/">Home</a>
-                    <a href="/history">History</a>
-                    <a href="/launches">Launches</a>
-                    <a href="/rockets">Rockets</a>
-                    <button className="nav-btn nav-close-btn" onClick={showNavbar} >
-                        <FaTimes />
-                    </button >
-                </nav>
-                <button className="nav-btn" onClick={showNavbar}>
-                    <FaBars />
-                </button>
-            </header>
-            <Home />
-        </>
-    ) 
+        <Router>
+            <div>
+                <Navbar bg="dark" variant={"dark"} className="header" expand="lg">
+                    <Navbar.Brand className='heading' >Space<span>X</span></Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="nav-link">
+                            <Nav.Link as={Link} to={"/home"}>Home</Nav.Link>
+                            <Nav.Link as={Link} to={"/history"}>History</Nav.Link>
+                            <Nav.Link as={Link} to={"/rocket"}>Rocket</Nav.Link>
+                            <Nav.Link as={Link} to={"/launches"}>Launches</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Navbar>
+            </div>
+            <div>
+                <Switch>
+                    <Route path="/launches">
+                        <Launches />
+                    </Route>
+                    <Route path="/history">
+                        <History />
+                    </Route>
+                    <Route path="/rocket">
+                        <Rocket />
+                    </Route>
+                    <Route path="/">
+                        <Home />
+                    </Route>
+                </Switch>
+            </div>
+        </Router>
+    );
 }
 
-export default Navbar;
+export default Navbars;
