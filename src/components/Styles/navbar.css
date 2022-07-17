@@ -27,6 +27,12 @@
     font-family: 'Gulzar', serif;
 }
 
+.nav-link a{
+    color: rgb(76, 76, 228);
+    font-weight: 400;
+    font-family: 'Gentium Book Plus', serif;
+}
+
 
 .nav-link{
     margin: auto;

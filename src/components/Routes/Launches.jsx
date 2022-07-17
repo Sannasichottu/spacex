@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React, { Component} from "react";
 import "../Styles/launches.css";
-import {BrowserRouter as Router,Switch,Route,Link } from "react-router-dom";
-import Detail from "./Detail";
+import { BrowserRouter as Router } from "react-router-dom";
+//import Detail from "./Detail";
 //import styled from "styled-components";
 //import Footer from "./Footer";
 
@@ -32,7 +32,8 @@ class Launches extends Component {
         var { isLoaded, items } = this.state;
 
         if (!isLoaded) {
-            return <div><h2>Loading...</h2></div>;
+            return <div>
+                <img className="loading" src="https://assets.materialup.com/uploads/c6980863-d7bf-41a6-9272-b6e2465b60c2/attachment.gif" alt="" /></div>;
         }
 
         else {
@@ -50,7 +51,7 @@ class Launches extends Component {
                                 <div className="search-box">
                                     <img src="https://www.freeiconspng.com/thumbs/search-icon-png/search-icon-png-26.png" alt="search" />
                                     <div className="search-input">
-                                        <input type="search" name="" id="" v placeholder="search" />
+                                        <input type="search" name="" id="" v placeholder="search"  />
                                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Creative-Tail-rocket.svg/1200px-Creative-Tail-rocket.svg.png" alt="" />
                                     </div>
                                 </div>
@@ -62,28 +63,18 @@ class Launches extends Component {
                         <div className="container-body">
                             {items.map(item => (
                                 <div className="launch-container" key={`popup${item.id}`} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
-                                    <img src={item.links.mission_patch} alt="" />
+                                    <a href="/detail"><img src={item.links.mission_patch} alt="" /></a>
                                     <div className="launch-name">{item.mission_name}</div>
                                     <div className="launch-info">
                                         <span>Year : {item.launch_year}</span>
-                                        <button>
-                                        <Link as={Link} to={"/detail"}>Details</Link>
-                                        </button>
                                         <span>Type : {item.rocket.rocket_type}</span>
-
                                     </div>
+                                        <a href="/detail" class="badge badge-danger">Detail</a>
                                 </div>
                             ))}
                         </div>
 
-                        <div>
-                            <Switch>
-                                <Route path="/detail">
-                                    <Detail />
-                                </Route>
 
-                            </Switch>
-                        </div>
                     </Router>
                 </>
             )

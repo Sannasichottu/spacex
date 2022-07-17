@@ -30,41 +30,66 @@ class Detail extends Component {
         var { isLoaded, items } = this.state;
 
         if (!isLoaded) {
-            return <div><h2>Loading...</h2></div>;
+            return <div>
+                <img src="https://cdn.dribbble.com/users/3148081/screenshots/6176842/rocket.gif" alt="" />
+            </div>;
         }
 
         else {
 
             return (
-                <div className="col-md-6">
-                    <div className="container-pop">
+                <>
+                    <div className="container-head">
+                        <div className="launch-head">
+                            <div className="head-launch">
+                                <img src="https://ouch-cdn2.icons8.com/i2FOOfif6Y0CzTm3eCtnqMhDw2819Mv2deIJ0EjVKV0/rs:fit:456:456/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNzUy/LzliZjFjOWFmLTU1/ZjItNDcyNy05MDhk/LTdlNDU2YTcwMDE1/Ni5zdmc.png" alt="launch logo" />
+                                Launches
+                            </div>
+                            <div className="search-box">
+                                <img src="https://www.freeiconspng.com/thumbs/search-icon-png/search-icon-png-26.png" alt="search" />
+                                <div className="search-input">
+                                    <input type="search" name="" id="" v placeholder="search" />
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Creative-Tail-rocket.svg/1200px-Creative-Tail-rocket.svg.png" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card text-center">
                         {items.map(item => (
-                            <div key={item.id}>
-                                <img src={item.links.mission_patch_small} alt="" />
-                                <div className="pop-info">
-                                    <div className="name">Mission Name : {item.mission_name}</div>
-                                    <div className="details">Launch Year : <span>{item.launch_year}</span></div>
-                                    <div className="details">Rocket Name : <span>{item.rocket.rocket_name}</span></div>
-                                    <div className="details">Rocket Type : <span>{item.rocket.rocket_type}</span></div>
-                                    <div className="details">Site_id : <span>{item.launch_site.site_id}</span></div>
-                                    <div className="details">Site Name : <span>{item.launch_site.site_name_long}</span></div>
-                                    <div className="details">Launch Success : <span>{item.launch_success ? `true` : `false`}</span></div>
-                                    <div className="details">Site Name : <span>{item.launch_site.site_name}</span></div>
-                                    <div className="details">Details : <span>{item.details}</span></div>
-                                    <a href={item.links.article_link} className="btn btn-primary btn-block" target="_blank" rel="noreferrer">Article</a>
-                                    <a href={item.links.presskit} className="btn btn-primary btn-block" target="_blank" rel="noreferrer">PDF</a>
-                                    <a href={item.links.wikipedia} className="btn btn-primary btn-block" target="_blank" rel="noreferrer">Wikipedia</a>
-                                    <a href={item.links.video_link} className="btn btn-primary btn-block" target="_blank" rel="noreferrer">Video-Clips</a>
-                                    
+                            <div key={item.id} >
+                                <div class="card-header">
+
+                                </div>
+                                <div class="card-body">
+                                    <img class="card-img-top" src={item.links.mission_patch_small} alt="Card image cap" />
+                                    <br/>
+                                    <br />
+                                    <h5 class="card-title">{item.mission_name}</h5>
+                                    <p class="card-text">{item.details}</p>
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Launch Year : <span>{item.launch_year}</span></li>
+                                        <li class="list-group-item">Rocket Name : <span>{item.rocket.rocket_name}</span></li>
+                                        <li class="list-group-item">Rocket Type : <span>{item.rocket.rocket_type}</span></li>
+                                        <li class="list-group-item">Site Name : <span>{item.launch_site.site_name_long}</span></li>
+                                        <li class="list-group-item">Launch Success : <span>{item.launch_success ? `true` : `false`}</span></li>
+                                        <li class="list-group-item">Launch-Date-UTC : <span>{item.launch_date_utc}</span></li>
+                                        <li class="list-group-item">Launch-Date-Local : <span>{item.launch_date_local}</span></li>
+                                    </ul>
+                                    <button type="button" class="btn btn-warning"><a href={item.links.article_link} target="_blank" rel="noreferrer">Article</a></button>
+                                    <button type="button" class="btn btn-success"><a href={item.links.wikipedia} target="_blank" rel="noreferrer">Wikipedia</a></button>
+                                    <button type="button" class="btn btn-danger"><a href={item.links.video_link} target="_blank" rel="noreferrer">Video-Clips</a></button>
+                                    <button type="button" class="btn btn-secondary"><a href={item.links.presskit} target="_blank" rel="noreferrer">PDF</a></button>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    <hr />
                                 </div>
                             </div>
                         ))}
                     </div>
 
 
-
-
-                </div>
+                </>
             )
         }
     }

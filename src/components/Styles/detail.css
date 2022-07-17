@@ -1,120 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 /* header === font-family: 'Josefin Sans', sans-serif; */
 
-.container{
-    flex-direction: row;
-    
-}
-
-.launch-head {
-    display: flex;
-    flex-direction: row;
-    color: rgb(26, 25, 25);
-    padding: 10px;
-    font-size: 25px;
-    font-weight: bold;
-    box-shadow: 0 3px 6px 0 #555;
-    font-family: 'Josefin Sans', sans-serif;
-    justify-content: space-between;
-    align-items: center;
-}
-.head-launch{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.launch-head img{
-    width: 48px;
-    height: 48px;
-    margin: 13px;
-}
-
-.search-box{
-    display: flex;
-    flex-direction: row;
-    padding: 5px 5px;
-    background-color:white;
-    border-radius: 6px;
-    width: 50%;
-    align-items: center;
-}
-
-.search-box img{
-    width: 32px;
-    height: 32px;
-}
-
-.search-input{
-color: black;
-font-size: 16px;
-font-weight: bold;
-border: none;
-outline: none;
-margin-left: 20px;   
-}
-
-/* --- container body --- */
-
-.container-body{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 30px;
-    justify-content: space-evenly;
-    background-color: rgb(173, 131, 131);
-}
-
-.launch-container{
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    margin-bottom: 20px;
-    margin-right:5px ;
-    width: 380px;
-    box-shadow: 0 3px 10px 0 #aaa;
-    cursor: pointer;
-}
-
-.launch-container img{
-    object-fit: cover;
-    height: 300px;
-}
-
-.launch-name{
-    font-size: 18px;
-    font-weight: 600;
-    color: rgb(250, 246, 2);
-    margin: 15px 0;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-.launch-info{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.launch-info span{
-    font-size: 16px;
-    font-weight: 500;
-    color: rgb(216, 218, 136);
-    text-transform: capitalize;
-}
 
 /* --- pop --- */
 
 .container-pop{
     padding: 20px 30px;
     justify-content: center;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid rgb(233, 114, 114);
+    display: flex;
+    flex-direction: column;
 }
 
 .container-pop img{
    object-fit: cover;
-   height: 352px;
+   height: 252px;
 }
 
 .pop-info{
@@ -149,6 +49,9 @@ margin-left: 20px;
     color: black;
     opacity: 0.5;
 }
+.card-header{
+    background-color: white;
+}
 
 
 .modal {
@@ -165,4 +68,20 @@ margin-left: 20px;
     color: rgb(197, 230, 10);
 }
 
+.card-title{
+    color: rgb(245, 147, 147);
+}
 
+.card-img-top{
+    height: 10%;
+    width: 25%;
+}
+
+.card-footer hr{
+    border: 2px;
+    color: white;
+}
+
+.btn{
+    margin-right: 5px;
+}
