@@ -1,1 +1,121 @@
     {/*background-image: url(https://cms.accuweather.com/wp-content/uploads/2022/01/AP20213035634998.jpg?w=632) no-repeat top center / cover ;*/}
+
+    import React from "react";
+import "../Styles/detail.css";
+
+
+function Detail() {
+    return (
+        <>
+            
+            <div className="container-body">
+                
+                    <div className="launch-container">
+                        <img src="https://images2.imgbox.com/40/e3/GypSkayF_o.png" alt="" />
+                        <div className="launch-name">FalconSat</div>
+                        <div className="launch-info">
+                            <span>Year : 2006</span>
+                            <span>Type : Merlin A</span>
+                        </div>
+                    </div>
+
+              
+
+            </div>
+
+        </>
+    )
+}
+
+export default Detail;
+
+
+
+
+
+
+-------------
+
+<div className="container-body">
+    {items.map(item => (
+<div className="modal fade" id={`popup${item.id}`} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div className="modal-dialog modal-lg">
+        <div className="modal-content">
+            <div className="modal-header">
+                <img src={item.links.mission_patch} alt="" />
+                <div className="launch-name">{item.mission_name}</div>
+                <div className="launch-info">
+                    <span>Year : {item.launch_year}</span>
+                    <span>Type : {item.rocket.rocket_type}</span>
+                </div>
+                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div className="modal-body">
+                <div id={`carousel${item.id}Controls`} class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <img src={item.links.mission_patch_small} class="d-block w-100" alt="..." />
+                        </div>
+                    </div>
+                    <a class="carousel-control-next" href={`#carousel${item.id}Controls`} role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Down</span>
+                    </a>
+                </div>
+
+                <div className="row rocket-info">
+                    <div className="col-sm-4">
+                        <h4>Mission Name</h4>
+                        <p>{item.mission_name} </p>
+                    </div>
+                    <div className="col-sm-4">
+                        <h4>Launch Year</h4>
+                        <p>{item.launch_year}</p>
+                    </div>
+                    <div className="col-sm-4">
+                        <h4>Rocket Type</h4>
+                        <p>{item.rocket.rocket_type}</p>
+                    </div>
+                    <div className="col-sm-4">
+                        <h4>Launch Success</h4>
+                        <p>{item.launch_success ? `true` : `false`}</p>
+                    </div>
+                     
+                    <div className="col-sm-4">
+                        <h4>Details</h4>
+                        <p>{item.details}</p>
+                    </div>
+                </div>
+              
+                <a href={item.wikipedia} className="btn btn-primary btn-block" target="_blank" rel="noreferrer">Learn More on Wikipedia</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+ ))}
+ </div>
+
+
+ ===========
+
+ <div className="container-pop">
+    {items.map(item => (
+        <div key={item.id}>
+            <img src={item.links.mission_patch_small} alt="" />
+            <div className="pop-info">
+                <div className="name">Mission Name : {item.mission_name}</div>
+                <div className="details">Launch Year : <span>{item.launch_year}</span></div>
+                <div className="details">Launch Success : <span>{item.launch_success ? `true` : `false`}</span></div>
+                <div className="details">Details : <span>{item.details}</span></div>
+                <a href={item.links.article_link} className="btn btn-primary btn-block" target="_blank" rel="noreferrer">Article</a>
+                <a href={item.links.presskit} className="btn btn-primary btn-block" target="_blank" rel="noreferrer">PDF</a>
+                <a href={item.links.wikipedia} className="btn btn-primary btn-block" target="_blank" rel="noreferrer">Wikipedia</a>
+                <a href={item.links.video_link} className="btn btn-primary btn-block" target="_blank" rel="noreferrer">Video-Clips</a>
+                
+            </div>
+        </div>
+    ))}
+</div>

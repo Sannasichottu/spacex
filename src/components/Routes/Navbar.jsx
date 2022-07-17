@@ -3,6 +3,7 @@ import { Navbar, Nav} from 'react-bootstrap';
 import {BrowserRouter as Router,Switch,Route,Link } from "react-router-dom";
 import Rocket from "./Rocket"
 import Home from "./Home"
+//import Detail from './Detail';
 import Launches from "./Launches"
 import History from "./History"
 import "../Styles/navbar.css";
