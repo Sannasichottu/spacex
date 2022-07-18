@@ -55,19 +55,19 @@ class Detail extends Component {
                         </div>
                     </div>
 
-                    <div class="card text-center">
+                    <div class="card-detail text-center">
                         {items.map(item => (
                             <div key={item.id} >
-                                <div class="card-header">
+                                <div class="card-detail-header">
 
                                 </div>
-                                <div class="card-body">
-                                    <img class="card-img-top" src={item.links.mission_patch_small} alt="Card image cap" />
+                                <div class="card-detail-body">
+                                    <img class="card-detail-img-top" src={item.links.mission_patch_small} alt="Card image cap" />
                                     <br/>
                                     <br />
-                                    <h5 class="card-title">{item.mission_name}</h5>
-                                    <p class="card-text">{item.details}</p>
-                                    <ul class="list-group">
+                                    <h5 class="card-detail-title">{item.mission_name}</h5>
+                                    <p class="card-detail-text">{item.details}</p>
+                                    <ul class="card-detail-list-group">
                                         <li class="list-group-item">Launch Year : <span>{item.launch_year}</span></li>
                                         <li class="list-group-item">Rocket Name : <span>{item.rocket.rocket_name}</span></li>
                                         <li class="list-group-item">Rocket Type : <span>{item.rocket.rocket_type}</span></li>

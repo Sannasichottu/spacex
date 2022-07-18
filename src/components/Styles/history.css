@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');/* Heading === font-family: 'Acme', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Kannada:ital@1&display=swap');/* Sidehead === font-family: 'Tiro Kannada', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap'); /* span === font-family: 'Courgette', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap'); /* details === font-family: 'Markazi Text', serif; */
+
+
+
+.History{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #2c5364, #203a43);
+
+}
+
+.card-his{
+    background:radial-gradient(#fff, #ffd6d6);
+    margin-bottom:10px;
+    margin-top: 20px;
+    padding: .5rem 2rem;
+    border-radius: 1rem;
+}
+
+.his-head{
+    text-align: left;
+    font-family: 'Acme', sans-serif;
+}
+
+.card-his ul{
+    border-radius:10px;
+    padding-top: 1rem;
+    text-align: left;
+    line-height: 100%;
+    font-family: 'Tiro Kannada', serif;
+    color: red;
+    font-weight: 5px;
+    font-size: 15px;
+}
+
+.card-his ul span{
+    color: black;
+    font-family: 'Courgette', cursive;
+}
+
+.expand{
+    background:radial-gradient(#fff, #ae87f5);
+    border-radius: 10px;
+    width: 28rem;
+    margin: auto;
+}
+
+.card-detail-list{
+    padding-top: 5px;
+    font-size:20px;
+    font-style:oblique;
+    font-family: 'Markazi Text', serif;
+}
+
+.expand button{
+    margin-bottom: 15px;
+    background-color:#6f4ee6;
+}

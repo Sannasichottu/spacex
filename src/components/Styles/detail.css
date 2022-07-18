@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 /* header === font-family: 'Josefin Sans', sans-serif; */
-
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');/*  para == font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap'); /* span === font-family: 'Courgette', cursive; */
 /* --- pop --- */
 
 .container-pop{
@@ -49,11 +49,28 @@
     color: black;
     opacity: 0.5;
 }
-.card-header{
-    background-color: white;
+.card-detail-header{
+    
+    background-color:burlywood;
+}
+.card-detail-body{
+    background-color: rgb(255, 253, 149);
 }
 
 
+.list-group-item{
+    background-color:rgb(243, 208, 198);
+    margin-right: 20%;
+    margin-left: 20%;
+    border-radius: 10px;
+    font-family: 'Courgette', cursive;
+    color: rgb(219, 38, 74);
+
+}
+
+.list-group-item span{
+    color: black;
+}
 .modal {
     box-sizing:border-box;
 }
@@ -68,19 +85,27 @@
     color: rgb(197, 230, 10);
 }
 
-.card-title{
-    color: rgb(245, 147, 147);
+.card-detail-title{
+    color: rgb(241, 94, 94);
+}
+.card-detail-text{
+    color:rgb(97, 97, 216);
+    font-family: 'Poppins', sans-serif;
+    margin-right: 20%;
+    margin-left: 20%;
 }
 
-.card-img-top{
+.card-detail-img-top{
     height: 10%;
-    width: 25%;
+    width: 20%;
+    padding-top: 14px;
 }
 
 .card-footer hr{
     border: 2px;
     color: white;
 }
+
 
 .btn{
     margin-right: 5px;

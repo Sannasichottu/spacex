@@ -63,25 +63,24 @@ margin-left: 20px;
     flex-wrap: wrap;
     padding: 30px;
     justify-content: space-evenly;
-    background-color: #fff; 
-    
-    
+    background-color: #fff;    
 }
 
 .launch-container{
-   
+
     display: flex;
     flex-direction: column;
     padding: 20px;
     margin-bottom: 30px;
     margin-right:3px ;
     width: 300px;
-    box-shadow: 0 3px 10px 0 rgb(173, 131, 131);
+    box-shadow: 0 3px 10px 0 rgb(173, 131, 131)  !important;
     cursor: pointer;
+    overflow: hidden;
 }
-
 .launch-container img{
-    transition : transform 0.5s;
+    transform :scale(1);
+    transition: transform 0.5s ease;
     object-fit: cover;
     height: 100%;
     width: 50%;

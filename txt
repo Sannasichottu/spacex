@@ -28,9 +28,20 @@ function Detail() {
 }
 
 export default Detail;
+================
 
-
-
+<div className="card text-center">
+    <div className="laun-overflow">
+        <img src="https://cdn.mos.cms.futurecdn.net/iM2Ax8QpPUEVW8pMXKohWV.jpeg" alt="" />
+    </div>  
+    <div className="card-laun-body textdark">
+        <h4 className="card-laun-title">Card Title</h4>
+        <p className="card-laun-text text-secondary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ipsum architecto repellendus vero reprehenderit earum dolorem hic numquam. Amet repudiandae quos incidunt libero voluptatem maxime alias? Quod esse ab amet.
+        </p>
+        <a href="#" className="btn-laun btn-outline-success">Hello</a>
+    </div>  
+</div>  
 
 
 
