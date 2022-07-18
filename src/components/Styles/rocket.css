@@ -37,8 +37,9 @@ h1 span{
     background-color: rgb(163, 167, 165);
 }
 
-.card img{
+.card-img-rocket{
     height: 300px;
+    width: 100%;
 }
 .card{
     margin-bottom: 30px;
@@ -67,7 +68,8 @@ h1 span{
     box-sizing:border-box;
 }
 .modal-content{
-    background-color: rgb(168, 99, 109);
+    background-color: rgb(161, 112, 119);
+    
 }
 
 .modal-header h5{

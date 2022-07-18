@@ -4,6 +4,7 @@
 .container{
     flex-direction: row;
     
+    
 }
 
 .launch-head {
@@ -62,21 +63,25 @@ margin-left: 20px;
     flex-wrap: wrap;
     padding: 30px;
     justify-content: space-evenly;
-    background-color: rgb(173, 131, 131);
+    background-color: #fff; 
+    
+    
 }
 
 .launch-container{
+   
     display: flex;
     flex-direction: column;
     padding: 20px;
-    margin-bottom: 20px;
-    margin-right:5px ;
-    width: 380px;
-    box-shadow: 0 3px 10px 0 #aaa;
+    margin-bottom: 30px;
+    margin-right:3px ;
+    width: 300px;
+    box-shadow: 0 3px 10px 0 rgb(173, 131, 131);
     cursor: pointer;
 }
 
 .launch-container img{
+    transition : transform 0.5s;
     object-fit: cover;
     height: 100%;
     width: 50%;
@@ -85,7 +90,7 @@ margin-left: 20px;
 .launch-name{
     font-size: 18px;
     font-weight: 600;
-    color: rgb(250, 246, 2);
+    color: rgb(250, 2, 2);
     margin: 15px 0;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -101,97 +106,10 @@ margin-left: 20px;
 .launch-info span{
     font-size: 16px;
     font-weight: 500;
-    color: rgb(216, 218, 136);
+    color: rgb(218, 136, 136);
     text-transform: capitalize;
 }
 
 
 
-/* --- pop --- */
 
-.container-pop{
-    display: flex;
-    flex-direction: row;
-    padding: 20px 30px;
-    justify-content: center;
-    border-bottom: 1px solid lightgray;
-}
-
-.container-pop img{
-   object-fit: cover;
-   height: 352px;
-}
-
-.pop-info{
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-}
-
-.pop-info .name{
-    font-size: 22px;
-    font-weight: 600;
-    color: black;
-    margin: 15px 0;
-    white-space: nowrap;
-    overflow: hidden;
-    text-transform: capitalize;
-    text-overflow: ellipsis;
-}
-
-.pop-info .details{
-    font-size: 16px;
-    font-weight: 500;
-    color: red;
-    overflow: hidden;
-    margin: 4px 0;
-    text-transform: capitalize;
-    text-overflow: ellipsis;
-}
-
-.pop-info .details span{
-    
-    color: black;
-    opacity: 0.5;
-}
-
-
-.modal {
-    box-sizing:border-box;
-}
-.modal-content{
-    background-color: rgb(168, 99, 109);
-}
-
-.modal-header h5{
-    font-family:'Gulzar', serif;
-    font-size: 25px;
-    text-align: center;
-    color: rgb(197, 230, 10);
-}
-
-
-/*-- Rocket Details -- */
-
-.row h4{
-    color: blue;
-    font-family: 'Bree Serif', serif;
-}
-
-.row p{
-    font-family: 'Crimson Text', serif;
-    color: rgb(184, 222, 253);
-}
-
-.rocket-info{
-    margin: 20px 0;
-    text-align: center;
-}
-
-.btn{
-    margin-top: 1rem;
-    padding: 0.6rem 1.8rem;
-    background-color: #1179e7;
-    border: none;
-    border-radius: 25px;
-}

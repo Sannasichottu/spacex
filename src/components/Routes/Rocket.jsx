@@ -38,7 +38,7 @@ class Rocket extends Component {
                         <Fragment>
                             <div className="col-md-6">
                                 <div className="card" key={rocket.id}>
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Iridium-4_Mission_%2825557986177%29.jpg" className="card-img-top" alt="..." />
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Iridium-4_Mission_%2825557986177%29.jpg" className="card-img-rocket"  alt="..." />
                                     <div className="card-body">
                                         <h5 className="card-title">{rocket.rocket_name}</h5>
                                         <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -84,7 +84,7 @@ class Rocket extends Component {
                                                     <span class="sr-only">Previous</span>
                                                 </a>
                                                 <a class="carousel-control-next" href={`#carousel${rocket.id}Controls`} role="button" data-slide="next">
-                                                    <span class="carousel-control-right-icon" aria-hidden="true"></span>
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                                     <span class="sr-only">Next</span>
                                                 </a>
                                             </div>

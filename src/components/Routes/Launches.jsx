@@ -28,6 +28,7 @@ class Launches extends Component {
     }
 
     render() {
+        
 
         var { isLoaded, items } = this.state;
 
@@ -62,14 +63,13 @@ class Launches extends Component {
 
                         <div className="container-body">
                             {items.map(item => (
-                                <div className="launch-container" key={`popup${item.id}`} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+                                <div className="launch-container"  key={item.id} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
                                     <a href="/detail"><img src={item.links.mission_patch} alt="" /></a>
                                     <div className="launch-name">{item.mission_name}</div>
                                     <div className="launch-info">
                                         <span>Year : {item.launch_year}</span>
                                         <span>Type : {item.rocket.rocket_type}</span>
                                     </div>
-                                        <a href="/detail" class="badge badge-danger">Detail</a>
                                 </div>
                             ))}
                         </div>
