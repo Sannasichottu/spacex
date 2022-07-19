@@ -42,7 +42,7 @@ class Rocket extends Component {
                                     <div className="card-rock-body">
                                         <h5 className="card-rock-title">{rocket.rocket_name}</h5>
                                         <p className="card-rock-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href={rocket.wikipedia} target={"_blank"} className="btn btn-primary" data-toggle="modal" data-target={`#popup${rocket.id}`}>View More</a>
+                                        <a  href={rocket.wikipedia} target={"_blank"} className="btn btn-primary" data-toggle="modal" data-target={`#popup${rocket.id}`}>View More</a>
                                     </div>
                                 </div>
                             </div>
