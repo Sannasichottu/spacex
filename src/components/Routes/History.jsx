@@ -2,12 +2,10 @@ import React, { useState, useEffect } from "react";
 import "../Styles/history.css";
 import { AnimatePresence, motion } from 'framer-motion'
 
-
 function History() {
 
     const [isOpen, setIsOpen] = useState(false);
     const [posts, setPosts] = useState([]);
-
     useEffect(() => {
         const url = 'https://api.spacexdata.com/v3/history';
         fetch(url).then(resp => resp.json())
@@ -18,9 +16,7 @@ function History() {
     return (
         <>
             <div className="History">
-                {
-                   
-                posts.map(post => (
+                {posts.map(post => (
                 <motion.div key={post.id} transition={{ layout: { duration: 1, type: "spring" } }} layout onClick={() => setIsOpen(!isOpen)} className="card-his" style={{ borderRadius: "1rem", boxShadow: '0px 10px 30px rgba(0,0,0,0.5' }} >
 
 
