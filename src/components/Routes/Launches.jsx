@@ -43,22 +43,6 @@ class Launches extends Component {
             return (
                 <>
                     <Router>
-                        <div className="container-head">
-
-                            <div className="launch-head">
-                                <div className="head-launch">
-                                    <img src="https://ouch-cdn2.icons8.com/i2FOOfif6Y0CzTm3eCtnqMhDw2819Mv2deIJ0EjVKV0/rs:fit:456:456/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNzUy/LzliZjFjOWFmLTU1/ZjItNDcyNy05MDhk/LTdlNDU2YTcwMDE1/Ni5zdmc.png" alt="launch logo" />
-                                    Launches
-                                </div>
-                                <div className="search-box">
-                                    <img src="https://www.freeiconspng.com/thumbs/search-icon-png/search-icon-png-26.png" alt="search" />
-                                    <div className="search-input">
-                                        <input type="search" name="" id="" v placeholder="search"  />
-                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Creative-Tail-rocket.svg/1200px-Creative-Tail-rocket.svg.png" alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
 
                         <Search/>
