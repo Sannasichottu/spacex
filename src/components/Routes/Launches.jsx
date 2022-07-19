@@ -1,7 +1,7 @@
 import React, { Component} from "react";
 import "../Styles/launches.css";
 import { BrowserRouter as Router } from "react-router-dom";
-import Search from "./Search";
+
 //import Detail from "./Detail";
 //import styled from "styled-components";
 //import Footer from "./Footer";
@@ -44,8 +44,6 @@ class Launches extends Component {
                 <>
                     <Router>
 
-
-                        <Search/>
                         <div className="container-body">
                             {items.map(item => (
                                 <div className="launch-container"  key={item.id} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
